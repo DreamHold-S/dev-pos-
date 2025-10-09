@@ -119,7 +119,7 @@ export default function Home() {
         </div>
       </div>
       <div className="display: absolute bottom-5 text-white">
-        @copyright CoreMind LLC
+        @copyright haha
       </div>
     </div>
   );
