@@ -9,9 +9,9 @@ export default function RolePage({ params }) {
 
   const DynamicComponent =
     role === "manager"
-      ? dynamic(() => import("@/components/Manager/ManagerPage"))
+      ? dynamic(() => import("@/components/Manager/HomePage"))
       : role === "cashier"
-      ? dynamic(() => import("@/components/Cashier/CashierPage"))
+      ? dynamic(() => import("@/components/Cashier/homePage"))
       : role === "jagsaalt"
       ? dynamic(() => import("@/components/Manager/jagsaaltPage"))
       : () => <p className="p-4 text-red-500">Role олдсонгүй: {role}</p>;
