@@ -10,7 +10,7 @@ export default function LoginPage() {
   const [role, setRole] = useState("");
 
   const handleLogin = () => {
-    if (role === "manager" || role === "cashier") {
+    if (role === "manager" || role === "cashier" || role === "jagsaalt") {
       router.push(`/${role}/huudas`);
     } else {
       alert("Role сонгоно уу!");
@@ -67,7 +67,10 @@ export default function LoginPage() {
               Менежер
             </option>
             <option value="cashier" className="text-black">
-              Кассчин
+              Касс
+            </option>
+            <option value="jagsaalt" className="text-black">
+              Жагсаалт
             </option>
           </select>
 
