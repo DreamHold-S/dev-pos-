@@ -35,6 +35,7 @@ const App = () => {
       setDates([]);
     }
   };
+
   async function getData() {
     const begDate = dates[0].format("YYYY/MM/DD");
     const endDate = dates[1].format("YYYY/MM/DD");
@@ -88,7 +89,7 @@ const App = () => {
           {garchig.toUpperCase()}
         </h2>
       </div>
-      <div className="flex flex items-start justify-start gap-2 w-[80%]">
+      <div className="flex items-start justify-start gap-2 w-[80%]">
         <RangePicker
           value={dates}
           format={dateFormat} // RangePicker-д форматыг зааж өгөх
