@@ -11,14 +11,10 @@ export default function RolePage({ params }) {
     role === "manager"
       ? dynamic(() => import("@/components/Manager/HomePage"))
       : role === "cashier"
-      ? dynamic(() => import("@/components/Cashier/homePage"))
+      ? dynamic(() => import("@/components/Cashier/page"))
       : role === "jagsaalt"
       ? dynamic(() => import("@/components/Manager/jagsaaltPage"))
       : () => <p className="p-4 text-red-500">Role олдсонгүй: {role}</p>;
 
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-amber-400">
-      <DynamicComponent />
-    </div>
-  );
+  return <DynamicComponent />;
 }
