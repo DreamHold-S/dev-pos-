@@ -9,7 +9,11 @@
     "lint": "eslint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@ant-design/icons": "^5.6.1",
+=======
+    "@ant-design/plots": "^2.6.5",
+>>>>>>> b151445543f8ae1ab9f180a5595508f53642c68c
     "antd": "^5.27.4",
     "next": "15.5.4",
     "react": "19.1.0",
